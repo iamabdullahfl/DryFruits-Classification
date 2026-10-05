@@ -84,7 +84,7 @@ plt.grid(True)
 plt.show()
 
 
-model = tf.keras.models.load_model("cnn_project_28x28.keras")
+model = tf.keras.models.load_model("CNNmax.keras")
 
 loss, accuracy = model.evaluate(Xtest, ytest, verbose=0)
 
