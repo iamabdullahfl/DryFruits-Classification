@@ -70,7 +70,7 @@ model.summary()
 history = model.fit(Xtrain, ytrain, batch_size=32, epochs=100, validation_split=0.15, verbose=1)
 
 
-model.save("cnn_project_28x28.keras")
+model.save("CNNmax.keras")
 
 
 plt.figure(figsize=(10, 5))
