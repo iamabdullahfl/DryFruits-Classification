@@ -70,7 +70,7 @@ model.summary()
 history = model.fit(Xtrain, ytrain, batch_size=32, epochs=100, validation_split=0.15, verbose=1)
 
 
-model.save("cnn_project_28x28.keras")
+model.save("CNNavg.keras")
 
 
 plt.figure(figsize=(10, 5))
@@ -84,7 +84,7 @@ plt.grid(True)
 plt.show()
 
 
-model = tf.keras.models.load_model("cnn_project_28x28.keras")
+model = tf.keras.models.load_model("CNNavg.keras")
 
 loss, accuracy = model.evaluate(Xtest, ytest, verbose=0)
 
